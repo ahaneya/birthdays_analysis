@@ -10,6 +10,7 @@ EDA Birthdays Sample data using R
 ## Questions trying to answer:
 1. Trends on the day of birth.
 2. Trends on the month of birth.
+3. Expolring trends by year quarter.
 
 
 ## Plots:
