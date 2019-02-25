@@ -31,3 +31,19 @@ ggplot(data = new_db, aes(x = days, color = month)) +
 #Plotting a histogra, using ggplot2, with fill as month
 qplot(data = new_db, x = days, fill = month, binwidth = 1) +
   scale_x_continuous(breaks = seq(1,31,1))
+
+#Adding quarters to the dataset
+new_db$month <- as.numeric(new_db$month) # switching back to numeric to pass it to luridate function
+new_db$quarter <- quarter(parse_date_time(new_db$dates, 'mdy'))
+
+#visulizing data using quarters 
+new_db$month <- as.factor(new_db$month) # switching back to factor to use as categoral variable
+str(new_db)
+
+qplot(data = new_db, x=quarter, fill = month) +
+  scale_y_continuous(breaks = seq(0,300,25))
+
+qplot(data = new_db, x=quarter, fill = month) +
+  scale_y_continuous(breaks = seq(0,300,25)) +
+  facet_wrap(~month)
+
