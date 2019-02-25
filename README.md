@@ -1,4 +1,4 @@
-# birthdays EDA
+# Birthdays EDA
 EDA Birthdays Sample data using R
 
 ## Packages used:
