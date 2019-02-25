@@ -1,4 +1,4 @@
-# birthdays_analysis
+# birthdays EDA
 EDA Birthdays Sample data using R
 
 ## Packages used:
