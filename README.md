@@ -6,6 +6,7 @@ EDA Birthdays Sample data using R
 2. tidyr
 3. ggplot2
 4. lubridate
+5. gridExtra
 
 ## Questions trying to answer:
 1. Trends on the day of birth.
